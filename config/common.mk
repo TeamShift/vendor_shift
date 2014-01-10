@@ -1,6 +1,10 @@
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/shift/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/shift/prebuilt/bin/sysinit:system/bin/sysinit
+
+# userinit support
+PRODUCT_COPY_FILES += \
     vendor/shift/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Bootanimation
@@ -9,7 +13,7 @@ PRODUCT_COPY_FILES += \
 
 # Changelog
 PRODUCT_COPY_FILES += \
-    vendor/shift/CHANGELOG-SHIFT.txt:system/etc/CHANGELOG-SHIFT.txt
+    vendor/shift/config/CHANGELOG-SHIFT.txt:system/etc/CHANGELOG-SHIFT.txt
 
 # general properties
 PRODUCT_PROPERTY_OVERRIDES += \
